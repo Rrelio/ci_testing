@@ -1,12 +1,21 @@
-<?php
-    $sampleValue = 'this is "asdasd" asdasd';
-?>
-<div style="">
-    jasdfasfsdfa
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti tempora nesciunt veritatis laborum enim modi quaerat, et minima facere? Quaerat tempora ab similique rerum saepe qui accusamus? Magni, eaque. Nemo?
+<?= view($header)?>
+<div class="container">
+    <div class="text-center">
+        <h2>This is a sample login page</h2>
+    </div>
+    <hr>
+    <form class="mb-3 mx-auto w-50">
+        <div class="mb-3">
+            <label for="userName" class="form-label">User name:</label>
+            <input type="text" class="form-control" id="userName">
+        </div>
+        <div class="mb-3">
+            <label for="userPassword" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="userPassword">
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-dark">Login</button>
+        </div>
+    </form>
 </div>
-
-
-<form action="" class="p-5">
-    <input type="text" name="sampleTextfield" id="" value="<?= $sampleValue?>">
-</form>
+<?= view($footer)?>

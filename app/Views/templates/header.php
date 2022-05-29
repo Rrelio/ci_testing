@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 500" width="185" height="44">
@@ -48,6 +48,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url("public/main/about")?>">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url("public/main/about")?>">This is a header</a>
                     </li>
                 </ul>
             </div>

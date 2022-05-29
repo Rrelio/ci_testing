@@ -6,16 +6,12 @@ class Main extends BaseController
 {
     public function index()
     {
-        echo view("templates/header.php");
-        echo view("index.php", ["directory"=>ROOTPATH]);
-        echo view("templates/footer.php");
+        echo view("index.php", ["header"=>"templates/header.php", "footer"=>"templates/footer.php"]);
     }
-
+    
     public function about()
     {
-        echo view("templates/header.php");
-        echo view("about.php");
-        echo view("templates/footer.php");
+        echo view("about.php", ["header"=>"templates/header.php", "footer"=>"templates/footer.php"]);
     }
 
 }
